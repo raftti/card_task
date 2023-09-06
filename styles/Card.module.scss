@@ -1,0 +1,174 @@
+.mainContainer {
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid #e7e6eb;
+  background: #fff;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 40px auto;
+    .costs {
+      color: #333;
+      font-family: Roboto;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 24px 0 16px;
+    }
+    .title {
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin: 0;
+    }
+    .text {
+      color: #333;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 8px 0 24px;
+    }
+    .secondText {
+      color: #666;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+    }
+    .radioButContainer {
+      margin: 16px 0 32px;
+      display: flex;
+      width: 152px;
+      gap: 16px;
+      span {
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgb(222, 221, 221);
+        border-radius: 50%;
+        position: relative;
+        transition: 0.2s;
+      }
+
+      .redFakeElement::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background-color: red;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input:checked ~ span {
+        border: 3px solid black;
+      }
+      .yellowFakeElement::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background-color: yellow;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .blueFakeElement::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background-color: blue;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input {
+        display: none;
+      }
+    }
+    .addButton {
+      color: #333;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-radius: 8px;
+      background: #fbbf23;
+      cursor: pointer;
+      margin: 0;
+      padding: 3px 0;
+      border: 1px solid transparent;
+    }
+    .addButton:hover {
+      background: #dda006;
+      border: 1px solid #333;
+    }
+    .buyButton {
+      margin: 16px 0 32px;
+      border-radius: 8px;
+
+      color: #333;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+      border-radius: 8px;
+      border: 1px solid #e7e6eb;
+      background: #fff;
+      box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+      border: 1px solid #61a5fa;
+    }
+    .buyButton:hover {
+      background: rgb(223, 220, 220);
+    }
+    a {
+      color: #61a5fa;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+img {
+  margin: 0 auto;
+  width: 258px;
+  height: 258px;
+}
+.yellowImage {
+  width: 258px;
+  height: 258px;
+  background: rgb(255, 255, 72);
+  margin: 0 auto;
+}
+.blueImage {
+  width: 258px;
+  height: 258px;
+  background: rgb(32, 32, 252);
+  margin: 0 auto;
+}
